@@ -31,6 +31,8 @@ Instalação do Node ( https://nodejs.org/en/ )
 ### Criando um novo projeto
 
  Abra o terminal no modo administrador
+ 
+ ng new nomedoprojeto --prefix-spa
 
  **Would you like to add Angular Routing?** Ao responder “Yes" ele cria um arquivo de rota em nossa aplicação.
 
