@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA com Angular</title>
+</head>
+
+<body>
+  <mat-toolbar>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+
+    <span> My first SPA</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <div>
+
+    <spa-clubes [valorInicial]="valor"></spa-clubes>
+
+    <button (click)="mudarValor()">Mudar Valor</button>
+    <button (click)="reiniciarValor()">Reiniciar Valor</button>
+    <button (click)="exibirTabela()">Exibir Clubes</button>
+    <button (click)="exibirTabela1()">Exibir Treinadores</button>
+
+
+  </div>
+
+  <table *ngIf="exibeTabela">
+    <tr>
+      <th>Nome</th>
+      <th>Titulos</th>
+      <th>Estado</th>
+      <th>Pais</th>
+    </tr>
+    <tr *ngFor="let clubes of listaClubes">
+      <td>{{clubes.nome}}</td>
+      <td>{{clubes.titulos}}</td>
+      <td>{{clubes.estado}}</td>
+      <td>{{clubes.pais}}</td>
+    </tr>
+  </table>
+
+   <table *ngIf="exibeTabela1">
+    <tr>
+      <th>Nome</th>
+      <th>Clube</th>
+    </tr>
+    <tr *ngFor="let treinadores of listaTreinadores">
+      <td>{{treinadores.nome}}</td>
+      <td>{{treinadores.clube}}</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
