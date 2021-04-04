@@ -1,27 +1,49 @@
-# Spaangular
+# SPA ANGULAR – FUTEBOL
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+Este projeto foi desenvolvido como parte do aprimoramento nos estudos de Angular no Bootcamp Avanade Angular Developer da Digital Innovation One
 
-## Development server
+Este projeto foi gerado utilizando a versão Angular CLI 11.2.5
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Node versão 14.16.0
 
-## Code scaffolding
+Sistema operacional: Windows 10 64 bits
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ 
 
-## Build
+No site: ( https://angular.io/ ): Tutoriais, Dicas, Ferramentas do Angular, Melhores Práticas, entre outros...
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+No site: ( https://angular.io/guide/setup-local ): instruções para configuração de seu ambiente, utilizando o Angular CLI. 
 
-## Running unit tests
+ 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Instalação do Node ( https://nodejs.org/en/ )
 
-## Running end-to-end tests
+·     node –v (versão instalada)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+ Instalação do Angular CLI
 
-## Further help
+·     npm install –g @angular/cli (necessário para realizar o build da nossa aplicação, criando componentes, diretivas, pipes)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+·     ng v (visualizando a versão do Angular que foi instalada)
+
+ 
+
+### Criando um novo projeto
+
+ Abra o terminal no modo administrador
+
+ **Would you like to add Angular Routing?** Ao responder “Yes" ele cria um arquivo de rota em nossa aplicação.
+
+**Which stylesheet format would you like to use?** CSS
+
+**cd nomedoprojeto**: navegue até a pasta do projeto
+
+**ng serve --o**: Comando para iniciar o servidor. A cada mudança nos arquivos, ele reconstrói “rebuild” a aplicação
+
+ No navegador, caso não abra automático, abra uma nova aba e digite**: http://localhost:4200/**
+
+ Para parar a aplicação: CTRL + C à Yes
+
+ Para criarmos componente, iremos utilizar o comando abaixo:
+
+**ng g c home** (g = generate / c = component / home = nome do nosso componente.
